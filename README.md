@@ -9,7 +9,7 @@ A collection of ESRI ArcGIS tools to perform GIS-based mineral (Nickel) prospect
 ###**Dependancies**###
 
 
-- ESRI ArcGIS (ArcInfo Licence)
+- ESRI ArcGIS 10.2 (ArcInfo Licence)
 - ESRI ArcGIS Spatial Analysis Extension
 - Python 2.7
 
