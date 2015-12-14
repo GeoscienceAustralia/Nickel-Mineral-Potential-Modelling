@@ -4,7 +4,10 @@
 
 A collection of ESRI ArcGIS tools to perform GIS-based mineral (Nickel) prospectivity analysis using a knowledge-driven approach to combine different datasets in the study of ***Potential for intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia: A continental-scale analysis of mineral system prospectivity.***
 
+###**Metadata**###
 
+
+- http://www.ga.gov.au/metadata-gateway/metadata/record/83884
 
 ###**Dependancies**###
 
