@@ -41,8 +41,6 @@ arcpy.AddField_management(inputRaster, "Confidence", "FLOAT", "", "", "", "",
 # loop through each row in table and update fields to user defined
 # values.  If the row value = 0 then populate fields with 0.
 arcpy.AddMessage("Updating values")
-#		with arcpy.da.UpdateCursor(inputRaster) as rows:
-#			for row in rows:
     
 with arcpy.da.UpdateCursor(inputRaster) as cursor:
     for row in cursor:
