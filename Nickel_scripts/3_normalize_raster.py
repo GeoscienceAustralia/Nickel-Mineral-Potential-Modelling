@@ -39,8 +39,8 @@ for raster in inputRastersList:
     outputRaster = os.path.join(outputFld, outRasName + '_norm')
     arcpy.AddMessage("\tOutput Raster: {0}_norm".format(outRasName))
 
-    # get input raster extent
-    dscRaster = arcpy.Describe(raster)
+    # set-up the raster describe object
+    descRaster = arcpy.Describe(raster)
     
     # Execute Normalize transformation
     arcpy.AddMessage("\tRunning Normalise Transformation on {0}"
@@ -49,18 +49,19 @@ for raster in inputRastersList:
     # get values required for normalization function
     maximumRasterValue = arcpy.GetRasterProperties_management(raster, "MAXIMUM")
     minimumRasterValue = arcpy.GetRasterProperties_management(raster, "MINIMUM")
+    # create constant rasters
     arcpy.AddMessage('\t\tCreating max constant raster')
     maximumRaster = CreateConstantRaster(maximumRasterValue, "FLOAT",
-                                     dscRaster.MeanCellHeight, dscRaster.extent)
+                                     descRaster.meanCellWidth, descRaster.extent)
     arcpy.AddMessage('\t\tCreating min constant raster')
     minimumRaster = CreateConstantRaster(minimumRasterValue, "FLOAT",
-                                     dscRaster.MeanCellHeight, dscRaster.extent)
+                                     descRaster.meanCellWidth, descRaster.extent)
 
     try:
         # normalisation formula
         arcpy.AddMessage('\t\tCreating normalised raster')
-        outRaster = (raster - minimumRaster)/(maximumRaster - minimumRaster)
-        outRaster.save(outputRaster)
+        normRaster = (raster - minimumRaster)/(maximumRaster - minimumRaster)
+        normRaster.save(outputRaster)
         arcpy.AddMessage("\tNormalised raster saved: {0}".format(outputRaster))
 
     except Exception as e:
