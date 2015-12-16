@@ -26,6 +26,7 @@ Download package, unzip and add **GA\_Nickel\_Toolbox\_2015.tbx** to your ArcGIS
 This study of Australia’s potential for tholeiitic intrusion-hosted Ni-Cu-PGE sulfide deposits utilises a mineral systems approach as the basis for a knowledge-driven GIS-based prospectivity analysis. The conceptual model for the formation of tholeiitic intrusion-hosted Ni-Cu-PGE sulfide deposits incorporates four mineral system components: (1) energy sources or drivers of the ore-forming system; (2) crustal and mantle lithospheric architecture; (3) sources of ore constituents (i.e., Ni, PGE, Cu, S in magmatic systems); and (4) gradients in ore depositional physico-chemical parameters. For each of the four system components 'theoretical’ conceptual criteria were developed which represent geological processes essential for the formation of a major ore deposit. These processes are represented by `mappable criteria’ which are themselves represented by individual geoscientific datasets. The GIS analysis of prospectivity uses a wide range of continental- to regional-scale geological, geophysical and geochemical datasets, each weighted with fuzzy logic values between 0 and 1 according to expert opinion. Summed values for each of the four mineral system components contributes a maximum of 25% of the final assessment of mineral potential, reflecting the need for all four mineral system components to have been present to form a major ore deposit.
 
 ![](https://github.com/GeoscienceAustralia/Nickel-Mineral-Potential-Modelling/blob/master/Images/Nickel_potential_final.jpg)
+*Figure 1: Map showing the potential for tholeiitic intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia. For further information refer to the publication listing below.*
 
 
 ## **Toolbox Description** ##
@@ -63,4 +64,4 @@ Executes a weighted sum calculation using an equal weight given to each input ra
 
 ## Publications ##
 
-Dulfer, H., Skirrow R.G., Champion, D.C., Highet, L.M., Czarnota, K., Coghlan, R., Milligan, P., 2015. Potential for intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia: A continental-scale analysis of mineral system prospectivity. Record 2015/xx. Geoscience Australia, Canberra. http://dx.doi.org/10.11636/Record.2015.xxx
+Dulfer, H., Skirrow R.G., Champion, D.C., Highet, L.M., Czarnota, K., Coghlan, R., Milligan, P.R., 2015. Potential for intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia: A continental-scale analysis of mineral system prospectivity. Record 2015/xx. Geoscience Australia, Canberra. http://dx.doi.org/10.11636/Record.2015.xxx
