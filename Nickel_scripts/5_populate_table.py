@@ -41,17 +41,19 @@ arcpy.AddField_management(inputRaster, "Confidence", "FLOAT", "", "", "", "",
 # loop through each row in table and update fields to user defined
 # values.  If the row value = 0 then populate fields with 0.
 arcpy.AddMessage("Updating values")
-    
-with arcpy.da.UpdateCursor(inputRaster) as cursor:
+
+fields = ['Value', 'Importance', 'Applicability', 'Confidence'] 
+     
+with arcpy.da.UpdateCursor(inputRaster, fields) as cursor:
     for row in cursor:
-        if not row.Value == 0:
-            row.Importance = Importance
-            row.Applicability = Applicability
-            row.Confidence = Confidence
+        if not row[0] == 0:
+            row[1] = Importance
+            row[2] = Applicability
+            row[3] = Confidence
         else:
-            row.Importance = 0
-            row.Applicability = 0
-            row.Confidence = 0
+            row[1] = 0
+            row[2] = 0
+            row[3] = 0
         cursor.updateRow(row)
 
 # if the weight option was ticked, create field and then
