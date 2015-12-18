@@ -34,7 +34,6 @@ for raster in inputRastersList:
     try: 
         outRasName = os.path.basename(raster) 
         outputRaster = os.path.join(outputFld, outRasName + '_int')
-        arcpy.AddMessage("\tOutput Raster: {0}_int".format(outRasName))
         
         # create raster object for use in processing
         rasObject = Raster(raster)
@@ -48,6 +47,8 @@ for raster in inputRastersList:
         # Build raster attribute table on output        
         arcpy.AddMessage("\tBuilding table")
         arcpy.BuildRasterAttributeTable_management(outputRaster, "Overwrite")
+        
+        arcpy.AddMessage("\tOutput Raster: {0}_int".format(outRasName))
 
     except Exception as e:
         arcpy.AddMessage("Processing failed: {0}".format(outRasName))
