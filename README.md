@@ -64,4 +64,4 @@ Executes a weighted sum calculation using an equal weight given to each input ra
 
 ## Publications ##
 
-Dulfer, H., Skirrow R.G., Champion, D.C., Highet, L.M., Czarnota, K., Coghlan, R., Milligan, P.R., 2015. Potential for intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia: A continental-scale analysis of mineral system prospectivity. Record 2015/xx. Geoscience Australia, Canberra. http://dx.doi.org/10.11636/Record.2016.001
+Dulfer, H., Skirrow, R.G., Champion, D.C., Highet, L.M., Czarnota, K & Coghlan, R.A., 2015. Potential for intrusion-hosted Ni-Cu-PGE sulfide deposits in Australia: A continental-scale analysis of mineral system prospectivity. Record  2016/001. Geoscience Australia, Canberra. http://dx.doi.org/10.11636/Record.2016.001
